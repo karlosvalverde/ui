@@ -3,4 +3,12 @@ DEVELOPMENT LOG
 Version 0.1.0
 
 ADDED
-- Seting-up the dev stack: Parcel + SASS + 
+- Seting-up the dev stack: Parcel + SASS + Bootstrap
+- Setting-up the repository: https://github.com/karlosvalverde/ui
+- Setting-up a continuous development site: https://ui-exercise.netlify.com/
+
+Version 0.1.1
+
+ADDED
+- Header
+- Basic layout

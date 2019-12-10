@@ -1,3 +1,29 @@
+/***
+GENERAL
+***/
+
 body{
-    background-color: crimson;
+    background-color: rgb(241, 238, 239);
 }
+
+/***
+BADGES
+***/
+
+.badge{
+    display: block;
+    background-color: LightSeaGreen ;
+    border-radius: 8pt;
+    line-height: 8pt;
+    color: white;
+    margin: -15pt 0 0 8pt;
+}
+
+/***
+MEDIA TAGS
+***/
+
+@media (min-width: 1080px) { 
+    
+}
+
