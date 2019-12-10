@@ -1,0 +1,6 @@
+DEVELOPMENT LOG
+
+Version 0.1.0
+
+ADDED
+- Seting-up the dev stack: Parcel + SASS + 
