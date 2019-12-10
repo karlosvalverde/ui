@@ -7,6 +7,83 @@ body{
 }
 
 /***
+COLOURS
+***/
+
+.colour-1{
+    background-color: #795473;
+}
+
+.colour-2{
+    background-color: LightSeaGreen;
+}
+
+.colour-3{
+    background-color: rgb(241, 238, 239);
+}
+
+/***
+BARS
+***/
+
+#bar-1{
+    box-shadow: black 0 0 3px 0;
+}
+
+/***
+COMPONENTS
+***/
+
+#c-01{
+    display: inline-block;
+    border: solid 1px black;
+    margin: 10px 0 0 0 !important;
+    padding: 0 !important;
+    height: 27px !important;
+}
+
+/***
+BUTTONS
+***/
+
+.btn{
+    border-radius: 0 !important;
+}
+
+.btn-light{
+    background-color: white !important;
+    border-color: white !important;
+}
+.btn-light:hover{
+    background-color: rgb(241, 238, 239) !important;
+    border-color: rgb(241, 238, 239) !important;
+}
+
+.btn-secondary{
+    background-color: rgb(241, 238, 239)  !important;
+    border-color: rgb(241, 238, 239)  !important;
+}
+
+/***
+SEARCH
+***/
+
+#search-1{
+    border-top: none;
+    border-bottom: solid 1px black;
+    
+
+}
+input[type=text]:focus:not([readonly]) {
+
+}
+#search-1 input[type=text] {
+    border: none;
+    padding-bottom: 0
+}
+
+
+/***
 BADGES
 ***/
 
@@ -24,6 +101,6 @@ MEDIA TAGS
 ***/
 
 @media (min-width: 1080px) { 
-    
+
 }
 

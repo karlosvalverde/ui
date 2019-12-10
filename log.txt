@@ -12,3 +12,8 @@ Version 0.1.1
 ADDED
 - Header
 - Basic layout
+
+Version 0.1.2
+
+ADDED
+- #bar-1
