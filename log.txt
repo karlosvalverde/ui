@@ -7,26 +7,30 @@ ADDED
 - Setting-up the repository: https://github.com/karlosvalverde/ui
 - Setting-up a continuous development site: https://ui-exercise.netlify.com/
 
+
 Version 0.1.1
 
 ADDED
 - Header
 - Basic layout
 
+
 Version 0.1.2
 
 ADDED
 - #bar-1
+
 
 Version 0.1.3
 
 ADDED
 - Table
 
-MODIFIED
+CHANGED
 - #bar-1 styles
 - Global font-size
 - Set global min-width: 1080px
+
 
 Version 0.2.0 // JS Events
 
@@ -34,3 +38,18 @@ ADDED
 - timetable.js
 - boostrap-table
 - anychart.js <-- Gantt
+
+
+Version 0.2.1
+
+ADDED
+- Collapse interaction
+
+CHANGED
+- Bar at table: from buttons to progress bars (able to draw percentages)
+
+
+Version 0.2.2
+
+TO DO
+- Better collapse integration https://stackoverflow.com/questions/18325779/bootstrap-3-collapse-show-state-with-chevron-icon
