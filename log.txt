@@ -27,3 +27,10 @@ MODIFIED
 - #bar-1 styles
 - Global font-size
 - Set global min-width: 1080px
+
+Version 0.2.0 // JS Events
+
+ADDED
+- timetable.js
+- boostrap-table
+- anychart.js <-- Gantt

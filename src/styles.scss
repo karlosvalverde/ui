@@ -45,6 +45,17 @@ TABLE
     background: #ffffb3;
 }
 
+.no-border-bottom{
+    border-bottom: 1px solid transparent !important;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
+
+#primary{
+    transition: .5s !important;
+}
 /***
 COMPONENTS
 ***/
@@ -66,6 +77,33 @@ BUTTONS
 
 .btn{
     border-radius: 0 !important;
+    
+}
+
+.btn-2{
+    border-top-left-radius: .3rem !important;
+    border-bottom-left-radius: .3rem !important;
+    margin-right: -6pt !important;
+}
+
+.btn-3{
+    border-top-right-radius: .3rem !important;
+    border-bottom-right-radius: .3rem !important;
+    margin-left: -6pt !important;
+}
+.no-style-r{
+    margin-right: 0 !important;
+}
+.btn.no-style,
+.btn.btn-2,
+.btn.btn-2:focus,
+.btn.btn-2:active,
+.btn.btn-3,
+.btn.btn-3:focus,
+.btn.btn-3:active{
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .btn-light{
@@ -81,6 +119,27 @@ BUTTONS
     background-color: rgb(241, 238, 239)  !important;
     border-color: rgb(241, 238, 239)  !important;
 }
+
+/***
+OPACITY
+***/
+.op-1{
+    opacity: 0.1;
+}
+.op-2{
+    opacity: 0.2;
+}
+.op-3{
+    opacity: 0.3;
+}
+.op-4{
+    opacity: 0.4;
+}
+.op-5{
+    opacity: 0.5;
+}
+
+
 
 /***
 SEARCH
@@ -118,7 +177,7 @@ BADGES
 MEDIA TAGS
 ***/
 
-@media (min-width: 1080px) { 
+@media (min-width: 1920px) { 
 
 }
 
