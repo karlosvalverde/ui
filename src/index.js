@@ -7,7 +7,7 @@ import("jquery").then(async (jquery) => {
     await import("bootstrap-table");
     await import("bootstrap-table/dist/bootstrap-table.min.css");
     await import("@fortawesome/fontawesome-free/css/all.css");
-    await import("./styles.scss");
+    await import("./styles.css");
     $(document).ready(function() {
       console.log('hello');
       let counter = 0;
