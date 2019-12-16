@@ -1,14 +1,16 @@
-import 'babel-polyfill';
 
-import("jquery").then(async (jquery) => {
-    $ = window.$ = window.jQuery = jquery;
-    await import('bootstrap');
-    await import("bootstrap/dist/css/bootstrap.css");
-    await import("bootstrap-table");
-    await import("bootstrap-table/dist/bootstrap-table.min.css");
-    await import("@fortawesome/fontawesome-free/css/all.css");
-    await import("./styles.css");
-    $(document).ready(function() {
+const jquery = require('jquery');
+
+$ = window.$ = window.jQuery = jquery;
+
+require("bootstrap");
+require("bootstrap/dist/css/bootstrap.css");
+require("bootstrap-table");
+require("bootstrap-table/dist/bootstrap-table.min.css");
+require("@fortawesome/fontawesome-free/css/all.css");
+require("./styles.css");
+
+$(document).ready(function() {
       console.log('hello');
       let counter = 0;
       $(".pop").popover({
@@ -33,5 +35,4 @@ import("jquery").then(async (jquery) => {
           console.log(counter);
         }  
       });
-    });
 });
