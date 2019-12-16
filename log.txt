@@ -44,6 +44,7 @@ Version 0.2.1
 
 ADDED
 - Collapse interaction
+- Progress bars
 
 CHANGED
 - Bar at table: from buttons to progress bars (able to draw percentages)
@@ -53,3 +54,5 @@ Version 0.2.2
 
 TO DO
 - Better collapse integration https://stackoverflow.com/questions/18325779/bootstrap-3-collapse-show-state-with-chevron-icon
+- Add corner label
+- Correct progress bars colors
