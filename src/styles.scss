@@ -74,11 +74,24 @@ BARS
 .progress-bar-striped {
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%,transparent);
     background-size: 2rem 2rem;
-}    
+}
+
+.pop{
+    margin: 4em 0 0 0 !important;
+    caret-color: transparent;    
+}
+
+.popover{
+    margin-top: 0.75em;
+}
 
 /***
 TABLE
 ***/
+
+table{
+    caret-color: transparent;
+}
 
 .highlight{
     background: #ffffb3;
@@ -92,8 +105,25 @@ TABLE
     padding: 0 !important;
 }
 
+.corner{
+    clip-path: polygon(100% 0, 0 0, 0 70%);
+    z-index: 999;      
+}
+
+/*
+.pannel-toggle:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0fe";  
+    margin-right: 1vw;
+}
+.pannel-toggle.collapsed:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f146";
+    margin-right: 1vw;
+}
+*/
+
 #primary{
-    
 }
 /***
 COMPONENTS
@@ -115,9 +145,13 @@ BUTTONS
 ***/
 
 .btn{
-    border-radius: 0 !important;
-    
+    border-radius: 0 !important;   
 }
+
+.btn.btn-outline-info{
+    border-radius: .3rem !important;   
+}
+
 
 .btn-2{
     border-top-left-radius: .3rem !important;

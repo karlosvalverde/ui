@@ -1,59 +1,37 @@
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-table";
-import "bootstrap-table/dist/bootstrap-table.min.css"
-import "@fortawesome/fontawesome-free/css/all.css";
-import "./styles.scss";
+import 'babel-polyfill';
 
-var myTask = [
-  {
-      id: 10,
-      name: 'Task 1',
-      title: 'Title 1',
-      date_start: '2019-05-09',
-      date_end: '2019-06-10',
-      color: 'crimson',
-  },
-  {
-      id: 11,
-      name: 'Task 2',
-      date_start: '2019-06-15',
-      date_end: '2019-06-20',
-      color: '#ADD8E6',
-  },
-  {
-      id: 12,
-      name: 'Task 3',
-      date_start: '2019-07-05',
-      date_end: '2019-07-15',
-      color: '#FFDAB9',
-  },
-  {
-      id: 13,
-      name: 'Task 4',
-      date_start: '2019-07-16',
-      date_end: '2019-07-18',
-      color: '#BC8F8F',
-  },
-  {
-      id: 14,
-      name: 'Task 5',
-      date_start: '2019-07-20',
-      date_end: '2019-07-23',
-      color: '#9932CC'
-  },
-  {
-      id: 15,
-      name: 'Task 6',
-      date_start: '2019-07-25',
-      date_end: '2019-07-28',
-      color: '#808000'
-  }
-];
-
-$(document).ready(function () {
-  $('#myChart').gantt({
-    data: myTask,
-    widthCorrectionFirstCol: 100
-  });
+import("jquery").then(async (jquery) => {
+    $ = window.$ = window.jQuery = jquery;
+    await import('bootstrap');
+    await import("bootstrap/dist/css/bootstrap.css");
+    await import("bootstrap-table");
+    await import("bootstrap-table/dist/bootstrap-table.min.css");
+    await import("@fortawesome/fontawesome-free/css/all.css");
+    await import("./styles.scss");
+    $(document).ready(function() {
+      console.log('hello');
+      let counter = 0;
+      $(".pop").popover({
+        animation: true,
+        html: true,
+        content: function(){
+          return $('#popover_content_wrapper').html();
+       },
+        placement: "left"
+      });
+      $("#c-03").click(function(){
+        if (counter === 0){
+          $("#c-04").removeClass("far fa-plus-square");
+          $("#c-04").addClass("far fa-minus-square");
+          counter += 1;
+          console.log(counter);
+        }
+        else if (counter === 1){
+          $("#c-04").removeClass("far fa-minus-square");
+          $("#c-04").addClass("far fa-plus-square");
+          counter -= 1;
+          console.log(counter);
+        }  
+      });
+    });
 });

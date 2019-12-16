@@ -52,7 +52,14 @@ CHANGED
 
 Version 0.2.2
 
-TO DO
-- Better collapse integration https://stackoverflow.com/questions/18325779/bootstrap-3-collapse-show-state-with-chevron-icon
-- Add corner label
-- Correct progress bars colors
+ADDED
+- Corner labels (.corner)
+- Progress bars colours
+- Popovers
+
+CHANGED
+- Better collapse integration. (jQuery)
+- Optimised #c-01 button
+
+DELETED
+- Uneccesary dependencies

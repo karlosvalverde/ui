@@ -4,10 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
-    <link href="assets/easy-gantt/easy-gantt.css" rel="stylesheet" />
-    <script src="assets/easy-gantt/easy-gantt.js"></script>
     <title>UI EXERCISE</title>
   </head> 
 <body>
@@ -22,7 +18,7 @@
     </ul>
     <ul class="nav justify-content-start col-sm">
       <li class="nav-item">
-        <a class="nav-link active text-white" href="#">trez</a>
+        <a class="nav-link active text-white ml-5 font-weight-bold" href="#">trez</a>
       </li>
     </ul>
     <ul class="nav">
@@ -50,11 +46,11 @@
         </div>
         <div class="col">
           <div class="input-group" id="search-1">
-            <span id="c-01">
+            <button type="button" id="c-01">
               <i class="fas fa-bars text-white colour-1 p-1"></i>
               <span class="text-secondary p-1">g1</span>
               <i class="fas fa-times text-secondary p-1"></i>
-            </span>
+            </button>
             <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
             <i class="fas fa-search-minus mt-3"></i>
           </div>
@@ -97,7 +93,7 @@
         </div>
       </div>
     </div>
-    <table class="table table-bordered text-secondary text-center table-hover">
+    <table class="table table-bordered text-secondary text-center">
       
       <thead class="">
         <tr>
@@ -137,7 +133,9 @@
       </thead>
       <tbody class="bg-white">
         <tr>
-          <th scope="row" class="text-left pl-4"><span data-toggle="collapse" data-target="#primary" class="accordion-toggle" style="cursor: pointer;"><i class="far fa-minus-square mr-1"></i>Primary</span></th>
+          <th scope="row" class="text-left pl-4">
+            <a id="c-03" data-toggle="collapse" href="#primary" class="text-secondary"><i id="c-04" class="far fa-plus-square mr-2" aria-hidden="true"></i>Primary</a>
+          </th>
           <td></td>
           <td class="p-1 m-0" style="position: absolute; width: 6.25vw !important; height: 2.85em !important; margin-left: -0.25vw !important; border: none !important">
             <div class="progress ml-4 h-100 w-100">
@@ -173,8 +171,6 @@
               <div class="progress-bar bg-dark op-2 mr-1 font-weight-bold" style="width:26%;">2</div>
               <div class="progress-bar bg-dark op-1 font-weight-bold" style="width:26%;">1</div>
             </div>
-            <!--<button type="button" class="btn btn-2 btn-dark op-1 h-100 w-49 px-2 font-weight-bold" style="margin-right: 0 !important">1</button>
-            <button type="button" class="btn no-style btn-dark op-2 h-100 w-49 px-2 font-weight-bold" style="margin-left: 0 !important">2</button>-->
           </td>
           <td> 
           </td>
@@ -192,59 +188,73 @@
           <td></td>
           <td class="p-1 m-0">
             <div class="progress ml-4 h-100 w-50">
-              <div class="progress-bar bg-dark op-1 font-weight-bold" style="width:100%;">1</div>
+              <div class="progress-bar bg-dark op-1 font-weight-bold" style="width:100%; height: 3.1em">1</div>
             </div>
           </td>
           <td class="p-1 m-0">
             <div class="progress h-100 w-50">
-              <div class="progress-bar bg-dark op-1 font-weight-bold" style="width:100%;">1</div>
+              <div class="progress-bar bg-dark op-1 font-weight-bold" style="width:100%; height: 3.1em">1</div>
             </div>
           </td>
           <td></td>
           <td></td>
           <td></td>
         </tr>
-        <tr id="primary" class="hiddenRow">
+        <tr id="primary" class="collapse">
           <th scope="row" class="no-border-bottom align-middle" style="height: 2.7em">
           </th>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-6 ml-4 h-100" style="position:absolute; width: 2.6vw; height: 2.85em !important; margin-left: 1.35vw !important;">
               <div class="progress-bar colour-5 font-weight-bold" style="width:60%;"><span class="ml-3">a</span></div>
             </div>
+            </a>
           </td>  
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4 ml-4 h-100" style="position:absolute; width: 2.6vw; height: 2.85em !important; margin-left: 1.35vw !important;">
               <div class="progress-bar bg-info font-weight-bold" style="width:20%;"><span style="position:absolute; margin-left: 1.15vw;">b</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4" style="position: absolute; width: 5.4vw !important; height: 2.85em !important;">
-              <div class="progress-bar bg-warning font-weight-bold" style="width:20% ; border-top: 2.85em !important; border-right: 40% !important;"></div>
-              <div class="progress-bar bg-info font-weight-bold" style="width:60%;">a</div>
+              <div class="progress-bar bg-warning corner" style="width:25%;"></div>
+              <div class="progress-bar bg-info font-weight-bold" style="position: absolute; width:80%; height: 2.85em;"><span class="ml-3">a</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4 h-100">
-              <div class="progress-bar bg-info font-weight-bold" style="width:50%;"><span style="position: absolute; margin-left: 1.15vw;">k</span></div>
+              <span class="font-weight-bold text-white ml-3 mt-2 position-absolute z-index-9999">k</span>
+              <div class="progress-bar bg-info font-weight-bold" style="width:50%;"><span style="height: 2.85em;"></span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-6 h-100" style="position:absolute; width: 10vw; height: 2.85em !important;">
               <div class="progress-bar colour-5 font-weight-bold" style="width:30%;"><span style="position: absolute !important; margin-left: 4.75vw;">dmo</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4 ml-4 h-100" style="position:absolute; width: 2.6vw; height: 2.85em !important; margin-left: 1.5vw !important;">
-              <div class="progress-bar bg-info font-weight-bold" style="width:60%;"><span class="ml-3">a</span></div>
+              <div class="progress-bar bg-danger corner" style="width:50%;"></div>
+              <div class="progress-bar bg-info font-weight-bold" style="position:absolute; width:60%; height: 2.85em;"><span class="ml-3">a</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
@@ -256,28 +266,34 @@
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress ml-4 h-100 w-50">
-              <div class="progress-bar colour-4 font-weight-bold" style="width:100%;">a</div>
+              <div class="progress-bar colour-4 font-weight-bold" style="width:100%; height: 2.85em !important;">a</div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress h-100 w-50">
-              <div class="progress-bar colour-4 font-weight-bold" style="width:100%;">...</div>
+              <div class="progress-bar colour-4 font-weight-bold" style="width:100%; height: 2.85em !important;">...</div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
         </tr>
-        <tr id="primary" class="hiddenRow">
+        <tr id="primary" class="collapse">
           <th scope="row" class="no-border-bottom align-middle" style="height: 2.7em">
           </th>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>  
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4 h-100">
               <div class="progress-bar bg-info font-weight-bold" style="width:45%;"><span style="position: absolute; margin-left: 1.15vw;">c</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
@@ -286,21 +302,27 @@
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4 ml-3 h-100 op-5" style="position:absolute; width: 2.6vw; height: 2.85em !important; margin-left: 1.35vw !important;">
               <div class="progress-bar bg-info font-weight-bold" style="width:90%;"><span class="">d</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4 ml-3 h-100" style="position:absolute; width: 4vw; height: 2.85em !important; margin-left: 1.35vw !important;">
               <div class="progress-bar bg-info font-weight-bold" style="width:75%;"><span class="text-truncate" style="position: absolute; width:4vw;">agrnlgkrlgrlgklrgklrjgklrjgklrlgjrlgjrgjrl</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-9 h-100" style="position:absolute; width: 26.25vw; height: 2.85em !important;">
               <div class="progress-bar colour-8 font-weight-bold" style="width:81%;"><span style="margin-left: 5vw;">e</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
@@ -317,7 +339,7 @@
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
         </tr>
-        <tr id="primary" class="hiddenRow">
+        <tr id="primary" class="collapse">
           <th scope="row" class="no-border-bottom align-middle" style="height: 2.7em">
           </th>
           <td class="no-border-bottom"></td>
@@ -331,9 +353,11 @@
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
-            <div class="progress colour-10 h-100" style="position:absolute; width: 31vw; height: 2.85em !important;">
-              <div class="progress-bar colour-1 font-weight-bold" style="width:75%;"><span style="margin-left: 7vw;">a</span></div>
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
+            <div class="progress colour-1 h-100" style="position:absolute; width: 31vw; height: 2.85em !important;">
+              <div class="progress-bar colour-10 font-weight-bold" style="width:75%;"><span style="margin-left: 7vw;">a</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
@@ -353,7 +377,7 @@
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
         </tr>
-        <tr id="primary" class="hiddenRow">
+        <tr id="primary" class="collapse">
           <th scope="row" class="no-border-bottom align-middle" style="height: 2.7em">
           </th>
           <td class="no-border-bottom"></td>
@@ -367,20 +391,28 @@
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4 ml-4 h-100" style="position:absolute; width: 2.6vw; height: 2.85em !important; margin-left: 1.5vw !important;">
-              <div class="progress-bar bg-info font-weight-bold" style="width:37%;"><span style="position: absolute; margin-left: 1.15vw;">a</span></div>
+              <div class="progress-bar bg-success corner" style="width:50%;"></div>
+              <span class="font-weight-bold text-white ml-3 mt-2 position-absolute z-index-9999">a</span>
+              <div class="progress-bar bg-info font-weight-bold" style="position: absolute; width:37%; height: 2.85em"></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-4 ml-4 h-100" style="position:absolute; width: 2.6vw; height: 2.85em !important; margin-left: 1.5vw !important;">
               <div class="progress-bar bg-info font-weight-bold" style="width:60%;"><span class="ml-3">a</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
             <div class="progress colour-7 ml-3 h-100" style="position:absolute; width: 29.5vw; height: 2.85em !important; margin-left: 1.35vw !important;">
               <div class="progress-bar bg-warning progress-bar-striped font-weight-bold" style="width:40%;"><span style="position: absolute; margin-left: 15vw;">a</span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
@@ -397,7 +429,7 @@
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
         </tr>
-        <tr id="primary" class="hiddenRow">
+        <tr id="primary" class="collapse">
           <th scope="row" class="no-border-bottom align-middle" style="height: 2.7em">
           </th>
           <td class="no-border-bottom"></td>
@@ -415,9 +447,12 @@
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom p-1 m-0">
+            <a href="#" class="pop" data-toggle="popover" data-trigger="click hover">
+            <span class="text-white mt-2 font-weight-bold position-absolute z-index-9999 small" style="margin-left: -0.2vw;">a</span>  
             <div class="progress colour-4 h-100">
-              <div class="progress-bar bg-info font-weight-bold" style="width:17%;"><span style="position: absolute; margin-left: 1.15vw;">a</span></div>
+              <div class="progress-bar bg-info" style="width:17%;"><span style="height: 2.85em;"></span></div>
             </div>
+            </a>
           </td>
           <td class="no-border-bottom"></td>
           <td class="no-border-bottom"></td>
@@ -434,8 +469,19 @@
           <td class="no-border-bottom"></td>
         </tr>
       </tbody>
-
-    </table>    
+    </table>
+    <div id="popover_content_wrapper" style="display: none">                 
+      <div>
+          <a href="#" class="btn btn-outline-info font-weight-bold">
+            <i class="fa fa-arrows-alt mr-1"></i><span class="small">PLAN EXISTING</span>
+          </a>
+          <a href="#" class="btn btn-outline-info font-weight-bold">
+            <i class="far fa-plus-square mr-1"></i><span class="small">CREATE</span>
+          </a>
+      </div>
+  </div>
+  
+      
     
   <script src="./index.js"></script>
 </body>
