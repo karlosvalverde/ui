@@ -70,3 +70,8 @@ Version 1.0.0 (16/12/2019)
 
 CHANGED
 - optimised margin-top in header elements
+
+Version 1.0.1 (16/12/2019)
+
+CHANGED
+- Fixing SASS bug in Parcel

@@ -1,6 +1,6 @@
 {
   "name": "ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A UI Test, using jQuery + SASS + Bootstrap + Parcel.",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
     "dev": "npm-run-all clean parcel:dev",
     "parcel:build": "parcel build src/index.html",
     "build": "npm-run-all clean parcel:build",
+    "sass": "sass",
     "clean": "rimraf dist .cache .cache-loader"
   },
   "keywords": ["ui", "jquery", "bootstrap", "parcel-bundler", "sass"],
