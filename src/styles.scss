@@ -137,8 +137,14 @@ COMPONENTS
     height: 23px !important;
 }
 
-#c-02{
+#c-05{
+    margin-left: 1.35vw !important;
 }
+
+#c-06{
+    margin-left: 1.45vw !important;
+}
+
 
 /***
 BUTTONS
@@ -250,7 +256,12 @@ BADGES
 MEDIA TAGS
 ***/
 
-@media (min-width: 1920px) { 
-
+@media (min-width: 1921px) { 
+    #c-05{
+        margin-left: 0.9vw !important;
+    }
+    #c-06{
+        margin-left: 1.15vw !important;
+    }
 }
 
