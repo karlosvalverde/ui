@@ -76,3 +76,8 @@ Version 1.0.1 (16/12/2019)
 
 CHANGED
 - Fixed jQuery bug
+
+Version 1.0.2 (08/01/2020)
+
+CHANGED
+- td background colour.
